@@ -1,0 +1,115 @@
+.rafting {
+  /* The image used */
+  background-image: url("https://www.euttaranchal.com/tourism/_imgs/rafting.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ganga {
+  /* The image used */
+  background-image: url("../img/paragliding1.jpeg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.map-container {
+  height: 200px;
+  position: relative;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.ganga1 {
+  /* The image used */
+  background-image: url("../img/bungee.jpeg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.ganga-cont{
+  padding-top: 120px;
+}
+.section{
+  background-image: url("../img/Section-1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 800px;
+}
+
+html,
+body,
+header,
+.full-page-intro {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .full-page-intro {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .full-page-intro {
+    height: 650px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331!important;
+  }
+}
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+  .top-nav-collapse {
+    background-color: #1C2331; }
+
+    /* Adding color to the Navbar on mobile */
+    @media only screen and (max-width: 768px) {
+      .navbar {
+        background-color: #1C2331; } }
+
+        /* Footer color for sake of consistency with Navbar */
+        .page-footer {
+          background-color: #1C2331; }
+
+
+          @media (max-width: 767px) {
+
+            .section{
+              background-image: url("../img/Section-1.png");
+              background-repeat: no-repeat;
+              background-position: left;
+              background-size: cover;
+              height: 840px;
+              text-align: center;
+
+
+            }
+            .zoom {
+              height: 200px;
+              width: 100%;
+              margin-bottom: 8px;
+            }
+            .bkgrnd{
+              height: 450px;
+            }
+          }
