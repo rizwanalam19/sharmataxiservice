@@ -1,3 +1,7 @@
+.navbar .nav-item .nav-link{
+  font-weight: 400;
+  font-size: 20px;
+}
 .rafting {
   /* The image used */
   background-image: url("https://www.euttaranchal.com/tourism/_imgs/rafting.jpg");
@@ -44,6 +48,9 @@
   background-position: top;
   background-size: cover;
   height: 800px;
+}
+.congo{
+  display: none; 
 }
 
 html,
@@ -114,7 +121,7 @@ header,
             }
           }
 
-          @media (max-width: 575px) {
+@media (max-width: 575px) {
 .booking{
   margin-top: 50px;
 }
@@ -123,3 +130,8 @@ header,
 }
 
 }
+@media (min-width: 1199px) {
+.navbar-nav {
+  padding-left: 35px !important;
+}
+ }

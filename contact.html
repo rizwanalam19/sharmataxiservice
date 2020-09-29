@@ -152,7 +152,7 @@ nsnavalsharma254@gmail.com </div>
 
         <!--Material textarea-->
         <div class="md-form md-outline mb-3">
-          <textarea id="form-message" name="message" class="md-textarea form-control" rows="3"></textarea>
+          <textarea id="form-message" name="Message" class="md-textarea form-control" rows="3"></textarea>
           <label for="form-message">How we can help?</label>
         </div>
 
@@ -237,9 +237,9 @@ const form = document.forms['google-sheet']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => console.log("success"))
+  .then(response => location.href="index.html")
   .catch(error => console.error('Error!', error.message))
-}).then(response=> alert("success"));
+});
 </script>
 <!-- Footer -->
 
