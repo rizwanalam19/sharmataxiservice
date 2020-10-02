@@ -52,6 +52,9 @@
 .congo{
   display: none;
 }
+.logo{
+  width: 110px;
+}
 
 html,
 body,
@@ -131,6 +134,9 @@ header,
 .number-button2{
   display: none;
 }
+.logo{
+  width: 110px;
+}
 
 }
 @media (min-width: 1199px) {
@@ -139,5 +145,9 @@ header,
 }
 .number-button1{
   display: none;
+}
+.logo{
+
+  width: 140px !important;
 }
  }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>sharma taxi service</title>
+  <title>Sharma Taxi Service</title>
   <link rel="icon" href="img/logo.png" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -17,7 +17,7 @@
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -25,13 +25,21 @@
 <body>
   <nav class="navbar  navbar-expand-lg navbar-light bg-light " >
     <div class="container">
-      <div class="mx-auto number-button1">
-        <a target="_blank" href="tel:+918453111119" class="btn btn-indigo " style="border-radius: 30px;"> <i class="fas fa-phone-alt mr-2"></i> +91 8453 111 119 </a>
+      <div class="mx-auto row number-button1">
+        <div class="">
+          <a target="_blank" href="tel:+918453111119" class="btn btn-indigo " style="border-radius: 30px;"> <i class="fas fa-phone-alt mr-2"></i> +91 8453 111 119 </a>
+
+        </div>
+        <div class="">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=+918453111119" class="" ><i class="fab fa-whatsapp fa-3x pl-3"></i></a>
+
+        </div>
+
 
       </div>
       <!-- Brand -->
       <a class="navbar-brand" href="index.html" target="_blank">
-      <img src="img/logo.png" width="110px" alt="">
+        <img src="img/logo.png"  class="logo" alt="">
       </a>
 
       <!-- Collapse -->
@@ -51,26 +59,29 @@
           </a>
         </li>
         <!-- <li class="nav-item">
-          <a class="nav-link" href="#" >About us</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="rate.html" >Rate Chart</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact us</a>
-        </li>
-      </ul>
+        <a class="nav-link" href="#" >About us</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="rate.html" >Rate Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact us</a>
+      </li>
+    </ul>
 
-<ul class="navbar-nav ml-auto number-button2">
-  <li class="nav-item">
-    <a target="_blank" href="tel:+918453111119" class="btn btn-indigo " style="border-radius: 30px;"> <i class="fas fa-phone-alt mr-2"></i> +91 8453 111 119 </a>
+    <ul class="navbar-nav ml-auto number-button2">
+      <li class="nav-item">
+        <a target="_blank" href="tel:+918453111119" class="btn btn-indigo " style="border-radius: 30px;"> <i class="fas fa-phone-alt mr-2"></i> +91 8453 111 119 </a>
 
-  </li>
-</ul>
-
-    </div>
+      </li>
+      <li class="nav-item">
+<a target="_blank" href="https://api.whatsapp.com/send?phone=+918453111119" class="" ><i class="fab fa-whatsapp fa-3x pt-2"></i></a>
+      </li>
+    </ul>
 
   </div>
+
+</div>
 </nav>
 <!-- Navbar -->
 
@@ -98,41 +109,41 @@
             <div class="card-body ">
 
               <!-- Form -->
-              <form  method="post" autocomplete="off" name="google-sheet">
+              <form  method="post" autocomplete="off" id="form-book" name="google-sheet">
                 <!-- Heading -->
                 <h6 class="dark-grey-text text-center">
                   <strong>Book Your Cab</strong>
                 </h6>
 
-<hr>
+                <hr>
 
-                  <div class="">
+                <div class="">
 
-                    <input type="text" name="Name" placeholder="Name" class="form-control">
+                  <input type="text" name="Name" placeholder="Name" class="form-control">
+
+                </div>
+                <br>
+                <div class="">
+
+                  <input type="email" name="Email" placeholder="Email" class="form-control">
+
+                </div>
+                <br>
+
+                <div class="">
+
+                  <input type="number" name="Phone" placeholder="Mobile Number" class="form-control">
+
+                </div>
+                <br>
+                <div class="row">
+
+
+                  <div class="col-6">
+
+                    <input type="text" name="From" placeholder="From" class="form-control">
 
                   </div>
-                  <br>
-                  <div class="">
-
-                    <input type="email" name="Email" placeholder="Email" class="form-control">
-
-                  </div>
-                  <br>
-
-                    <div class="">
-
-                      <input type="number" name="Phone" placeholder="Mobile Number" class="form-control">
-
-                    </div>
-<br>
-<div class="row">
-
-
-                    <div class="col-6">
-
-                      <input type="text" name="From" placeholder="From" class="form-control">
-
-                    </div>
 
 
 
@@ -141,28 +152,28 @@
                     <input type="text" name="To" placeholder="To"  class="form-control">
 
                   </div>
+                </div>
+                <br>
+                <div class="row">
+
+
+                  <div class="col-6">
+
+                    <input type="date" name="Date" value = "2020-02-09" autofocus placeholder="Date"  class="form-control">
+
                   </div>
-<br>
-<div class="row">
 
+                  <div class="col-6">
+                    <input type="time" name="Time" value= "14:00"  class="form-control">
 
-  <div class="col-6">
+                  </div>
 
-    <input type="date" name="Date" value="today" placeholder="Date"  class="form-control">
+                </div>
+                <br>
+                <div class="">
+                  <input type="text" name="Car-type" value="" placeholder="Car Type"  class="form-control">
 
-  </div>
-
-  <div class="col-6">
-    <input type="time" name="Time" value="20"  class="form-control">
-
-  </div>
-
-</div>
-<br>
-<div class="">
-  <input type="text" name="Car-type" value="" placeholder="Car Type"  class="form-control">
-
-</div>
+                </div>
                 <div class="text-center">
                   <button class="btn btn-indigo"  style="border-radius: 20px;">submit</button>
 
@@ -178,41 +189,41 @@
 
           <div class="congo">
 
- <!-- Central Modal Medium Success -->
+            <!-- Central Modal Medium Success -->
 
-   <div class="modal-dialog modal-notify modal-success" role="document">
-     <!--Content-->
-     <div class="modal-content">
-       <!--Header-->
-       <div class="modal-header">
-         <p class="heading lead"> Sharma Taxi Service</p>
+            <div class="modal-dialog modal-notify modal-success" role="document">
+              <!--Content-->
+              <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                  <p class="heading lead"> Sharma Taxi Service</p>
 
-       </div>
+                </div>
 
-       <!--Body-->
-       <div class="modal-body">
-         <div class="text-center">
-           <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
-           <p>Congratulation Your Booking Has Been Submitted ! <br>
-             We Will Call You Soon .
-           </p>
-         </div>
-       </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="text-center">
+                    <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+                    <p>Congratulation Your Booking Has Been Submitted ! <br>
+                      We Will Call You Soon .
+                    </p>
+                  </div>
+                </div>
 
-       <!--Footer-->
-       <p class="h6 text-center font-weight-bold">Follow Us :</p>
-       <div class="modal-footer justify-content-center">
+                <!--Footer-->
+                <p class="h6 text-center font-weight-bold">Follow Us :</p>
+                <div class="modal-footer justify-content-center">
 
-         <a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
-         <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
-         <a class="btn-floating btn-lg btn-ins" type="button" role="button"><i class="fab fa-instagram"></i></a>
+                  <a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
+                  <a class="btn-floating btn-lg btn-ins" type="button" role="button"><i class="fab fa-instagram"></i></a>
 
-       </div>
-     </div>
-     <!--/.Content-->
-   </div>
+                </div>
+              </div>
+              <!--/.Content-->
+            </div>
 
- <!-- Central Modal Medium Success-->
+            <!-- Central Modal Medium Success-->
             <!-- <p class="h3 text-center text-success pt-5">Congratulation Your Booking Form Has Been Submited ! <br> </p>
             <p class="h4 text-center">We Will Call You Soon</p> -->
           </div>
@@ -256,481 +267,481 @@
 
 <h2 class="text-center font-weight-bold pt-4 ">Explore The Cities</h2>
 <div class="container pt-4">
-<div class="row">
+  <div class="row">
 
-<div class="col-lg-4">
-  <div class="card mb-3 wow animated slideInLeft">
+    <div class="col-lg-4">
+      <div class="card mb-3 wow animated slideInLeft">
 
-      <!--Card image-->
-      <div class="">
-        <img src="img/gangotri.jpeg" height="250px" width="100%" class="" alt="photo">
+        <!--Card image-->
+        <div class="">
+          <img src="img/gangotri.jpeg" height="250px" width="100%" class="" alt="photo">
+
+        </div>
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title white-dark font-weight-bold">Gangotri</h4>
+          <!--Text-->
+          <p class="card-text white-dark">Gangotri is a town and a Nagar Panchayat in Uttarkashi district in the state of Uttarakhand, India. It is a Hindu pilgrim town on the banks of the river Bhagirathi and origin of river Ganges.</p>
+          <!-- <a href="#form-book" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Book Now</a> -->
+        </div>
 
       </div>
-
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title white-dark font-weight-bold">Gangotri</h4>
-        <!--Text-->
-        <p class="card-text white-dark">Gangotri is a town and a Nagar Panchayat in Uttarkashi district in the state of Uttarakhand, India. It is a Hindu pilgrim town on the banks of the river Bhagirathi and origin of river Ganges.</p>
-        <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a>
-      </div>
-
+      <!--/.Card-->
     </div>
-    <!--/.Card-->
-</div>
-<div class="col-lg-4">
-  <div class="card mb-3 wow animated slideInUp">
+    <div class="col-lg-4">
+      <div class="card mb-3 wow animated slideInUp">
 
-      <!--Card image-->
-      <div class="">
-        <img src="img/nanaital.jpg" height="250px" width="100%" class="card-img-top" alt="photo">
+        <!--Card image-->
+        <div class="">
+          <img src="img/nanaital.jpg" height="250px" width="100%" class="card-img-top" alt="photo">
+
+        </div>
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title white-dark font-weight-bold">Nainital</h4>
+          <!--Text-->
+          <p class="card-text white-dark">Nainital is a Himalayan resort town in the Kumaon region of India’s Uttarakhand state. Formerly a British hill station, a popular boating site with Naina Devi Hindu Temple on its north .</p>
+          <!-- <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a> -->
+        </div>
 
       </div>
-
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title white-dark font-weight-bold">Nainital</h4>
-        <!--Text-->
-        <p class="card-text white-dark">Nainital is a Himalayan resort town in the Kumaon region of India’s Uttarakhand state. Formerly a British hill station, a popular boating site with Naina Devi Hindu Temple on its north .</p>
-        <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a>
-      </div>
-
+      <!--/.Card-->
     </div>
-    <!--/.Card-->
-</div>
-<div class="col-lg-4">
-  <div class="card mb-3 wow animated slideInRight">
+    <div class="col-lg-4">
+      <div class="card mb-3 wow animated slideInRight">
 
-      <!--Card image-->
-      <div class="">
-        <img src="img/mussoorie.jpg" height="250px" class="card-img-top" alt="photo">
+        <!--Card image-->
+        <div class="">
+          <img src="img/mussoorie.jpg" height="250px" class="card-img-top" alt="photo">
+
+        </div>
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title white-dark font-weight-bold">Mussoorie</h4>
+          <!--Text-->
+          <p class="card-text white-dark">Mussoorie is a hill station and a municipal board in the Dehradun District of the Indian state of Uttarakhand. It is about 35 kilometres from the state capital of Dehradun .</p>
+          <!-- <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a> -->
+        </div>
 
       </div>
-
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title white-dark font-weight-bold">Mussoorie</h4>
-        <!--Text-->
-<p class="card-text white-dark">Mussoorie is a hill station and a municipal board in the Dehradun District of the Indian state of Uttarakhand. It is about 35 kilometres from the state capital of Dehradun .</p>
-        <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a>
-      </div>
-
+      <!--/.Card-->
     </div>
-    <!--/.Card-->
-</div>
 
-</div>
+  </div>
 
-<br><br>
-<div class="row">
+  <br><br>
+  <div class="row">
 
-<div class="col-lg-4">
-  <div class="card mb-3 animated slideInLeft">
+    <div class="col-lg-4">
+      <div class="card mb-3 animated slideInLeft">
 
-      <!--Card image-->
-      <div class="">
-        <img src="img/kedarnath.jpeg" height="250px" class="card-img-top" alt="photo">
+        <!--Card image-->
+        <div class="">
+          <img src="img/kedarnath.jpeg" height="250px" class="card-img-top" alt="photo">
+
+        </div>
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title white-dark font-weight-bold">Kedarnath</h4>
+          <!--Text-->
+          <p class="card-text white-dark">Kedarnath is a town in the Indian state of Uttarakhand and has gained importance because of Kedarnath Temple. It is a nagar panchayat in Rudraprayag district.</p>
+          <!-- <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a> -->
+        </div>
 
       </div>
-
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title white-dark font-weight-bold">Kedarnath</h4>
-        <!--Text-->
-        <p class="card-text white-dark">Kedarnath is a town in the Indian state of Uttarakhand and has gained importance because of Kedarnath Temple. It is a nagar panchayat in Rudraprayag district.</p>
-        <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a>
-      </div>
-
+      <!--/.Card-->
     </div>
-    <!--/.Card-->
-</div>
-<div class="col-lg-4">
-  <div class="card mb-3 wow animated slideInDown">
+    <div class="col-lg-4">
+      <div class="card mb-3 wow animated slideInDown">
 
-      <!--Card image-->
-      <div class="">
-        <img src="img/badrinath.jpg" height="250px" class="card-img-top" alt="photo">
+        <!--Card image-->
+        <div class="">
+          <img src="img/badrinath.jpg" height="250px" class="card-img-top" alt="photo">
+
+        </div>
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title white-dark font-weight-bold">Badrinath</h4>
+          <!--Text-->
+          <p class="card-text white-dark">Badrinath is a holy town and a nagar panchayat in Chamoli district in the state of Uttarakhand. It is one of the four sites in India's Char Dham pilgrimage and gets its name from  Badrinath.</p>
+          <!-- <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a> -->
+        </div>
 
       </div>
-
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title white-dark font-weight-bold">Badrinath</h4>
-        <!--Text-->
-        <p class="card-text white-dark">Badrinath is a holy town and a nagar panchayat in Chamoli district in the state of Uttarakhand. It is one of the four sites in India's Char Dham pilgrimage and gets its name from  Badrinath.</p>
-        <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a>
-      </div>
-
+      <!--/.Card-->
     </div>
-    <!--/.Card-->
-</div>
-<div class="col-lg-4">
-  <div class="card mb-3 wow animated slideInRight">
+    <div class="col-lg-4">
+      <div class="card mb-3 wow animated slideInRight">
 
-      <!--Card image-->
-      <div class="">
-        <img src="img/haridwar.jpg" height="250px" class="card-img-top" alt="photo">
+        <!--Card image-->
+        <div class="">
+          <img src="img/haridwar.jpg" height="250px" class="card-img-top" alt="photo">
+
+        </div>
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Title-->
+          <h4 class="card-title white-dark font-weight-bold">Haridwar</h4>
+          <!--Text-->
+          <p class="card-text white-dark">Haridwar is an ancient city and important Hindu pilgrimage site in North India's Uttarakhand state, where the River Ganges exits the Himalayan foothills.</p>
+          <!-- <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a> -->
+        </div>
 
       </div>
-
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title white-dark font-weight-bold">Haridwar</h4>
-        <!--Text-->
-<p class="card-text white-dark">Haridwar is an ancient city and important Hindu pilgrimage site in North India's Uttarakhand state, where the River Ganges exits the Himalayan foothills.</p>
-        <a href="#" class="btn btn-outline-dark btn-md waves-effect" style="border-radius: 20px;">Read more</a>
-      </div>
-
+      <!--/.Card-->
     </div>
-    <!--/.Card-->
-</div>
 
-</div>
+  </div>
 </div>
 <br>
 <div class="container ganga wow animated slideInRight">
-<p class="h1 text-center white-text  ganga-cont">
-Flying Fast Falling Slow !
+  <p class="h1 text-center white-text  ganga-cont">
+    Flying Fast Falling Slow !
 
-</p>
-<div class="text-center">
-  <button type="button" class="btn btn-primary " style="border-radius: 20px;">Paragliding At Naukuchiatal</button>
+  </p>
+  <div class="text-center">
+    <button type="button" class="btn btn-primary " style="border-radius: 20px;">Paragliding At Naukuchiatal</button>
+  </div>
+
 </div>
-
-          </div>
 <br><br>
 <div class="jumbotron section ">
-   <div class="container wow animated slideInLeft">
-     <div class="row">
-       <div class="col-lg-6">
-         <h2 class="font-weight-bold pl-5">Benefits</h2>
-         <br>
-
-         <div class="row ">
-           <div class="col-3 text-right">
-             <img src="img/SearchCar.png" alt="">
-           </div>
-           <div class="col-9">
-             <h6 class="text-primary font-weight-bold">Sanitized Car </h6>
-             <small>We'll never sacrifice quality for convenience. Our equipment is state-of-the-art.
-               We instruct our drivers to disinfectant wipes for everyone to use.
-               </small>
-             </div>
-           </div>
-           <br><br>
-
-           <div class="row">
-             <div class="col-3 text-right">
-               <img src="img/Download.png" alt="">
-             </div>
-             <div class="col-9">
-               <h6 class="text-primary font-weight-bold">Reasonable Rate</h6>
-               <small>Our rates are anchored by local taxi fares: we sets its rates to be slightly lower than whatever taxis charge, and so its fares are likely to work in a similar way to that city's taxi metering.
-                 </small>
-               </div>
-             </div>
-             <br><br>
-             <div class="row">
-               <div class="col-3 text-right">
-                 <img src="img/Price.png" alt="" >
-               </div>
-               <div class="col-9">
-                 <h6 class="text-primary font-weight-bold">Money Saving</h6>
-                 <small>We valued money the package we introduce is highly reasonable rates
-                   that is reason it make us different from another.
-                   </small>
-                 </div>
-               </div>
-               <br><br>
-               <div class="pl-5">
-                 <button class="btn btn-primary" type="button" name="button" style="border-radius: 20px;">Get Started</button>
-                 <button class="btn btn bg-white" type="button" name="button" style="border-radius: 20px;">Learn More</button>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-
-
-<div class="container">
-
-
-       <!--Section: Main info-->
- <section class="mt-5 wow fadeIn">
-
-   <!--Grid row-->
-   <div class="row">
-
-     <!--Grid column-->
-     <div class="col-md-6 mb-4 wow slideInLeft animated">
-
-       <img src="img/picnic1.jpeg" class="img-fluid z-depth-1-half"
-       alt="">
-
-     </div>
-     <!--Grid column-->
-
-     <!--Grid column-->
-     <div class="col-md-6 mb-4 wow slideInRight animated">
-
-       <!-- Main heading -->
-       <h3 class="h3 mb-3">A car for every occasion </h3>
-       <p>We know the difference is in the details and that’s why our car rental services, in the tourism
-         and business industry, stand out for their quality and good taste, to offer you an unique experience</p>
-         <!-- Main heading -->
-
-         <hr>
-
-         <p>
-           <strong>400+</strong>For Outstation Cars,
-           <strong>600+</strong> For Local Cars,
-           <strong>74+</strong>Luxury Cars
-
-         </p>
-
-         <!-- CTA -->
-         <a target="_blank" href="#" class="btn btn-grey btn-md">Download the Rate chart
-           <i class="fas fa-download ml-1"></i>
-         </a>
-
-
-       </div>
-       <!--Grid column-->
-
-     </div>
-     <!--Grid row-->
-
-   </section>
-
-</div>
-
-<h2 class="text-center font-weight-bold pt-4 pb-4">Lets Do Some Adventure</h2>
-<div class="container">
-
-<div class="row">
-  <div class="col-lg-3 col-xs-12 col-sm-12">
-    <div class="view overlay zoom wow animated slideInLeft">
-<img src="img/trek.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-<div class="mask flex-center waves-effect waves-light overlay">
-  <!-- <a href="#" class="btn btn-primary">Trekking</a> -->
-    <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Trekking</a>
-  <!-- <p class="h3 white-text">Trekking</p> -->
-</div>
-</div>
-  </div>
-  <div class="col-lg-3">
-    <div class="view overlay zoom wow animated slideInLeft">
-<img src="img/hill.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-<div class="mask flex-center waves-effect waves-light overlay">
-    <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Hill Stations</a>
-  <!-- <p class="h3 white-text">Hill Stations</p> -->
-</div>
-</div>
-  </div>
-  <div class="col-lg-3">
-    <div class="view overlay zoom wow animated slideInRight">
-<img src="img/roadtrip.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-<div class="mask flex-center waves-effect waves-light overlay">
-  <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Road Trip</a>
-  <!-- <p class="h3 white-text">Road Trip</p> -->
-</div>
-</div>
-  </div>
-  <div class="col-lg-3">
-    <div class="view overlay zoom wow animated slideInRight">
-<img src="img/rafting.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-<div class="mask flex-center waves-effect waves-dark overlay">
-  <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">River Rafting</a>
-
-  <!-- <p class="h3 white-text">River Rafting</p> -->
-</div>
-</div>
-  </div>
-</div>
-<br>
-
-  <div class="row">
-      <div class="col-lg-3 col-xs-12 col-sm-12">
-        <div class="view overlay zoom wow animated slideInLeft">
-    <img src="img/buggee.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-    <div class="mask flex-center waves-effect waves-light overlay">
-      <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Bungee Jumping</a>
-
-      <!-- <p class="h3 white-text">Bungee Jumping</p> -->
-    </div>
-  </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="view overlay zoom wow animated slideInLeft">
-    <img src="img/climbing.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-    <div class="mask flex-center waves-effect waves-light overlay">
-      <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Rock Climbing</a>
-
-      <!-- <p class="h3 white-text">Rock Climbing</p> -->
-    </div>
-    </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="view overlay zoom wow animated slideInRight">
-    <img src="img/camp.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-    <div class="mask flex-center waves-effect waves-light overlay">
-      <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Camping</a>
-
-      <!-- <p class="h3 white-text">Camping</p> -->
-    </div>
-  </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="view overlay zoom wow animated slideInRight">
-    <img src="img/cycling.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
-    <div class="mask flex-center waves-effect waves-dark overlay">
-      <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Mountain biking</a>
-
-      <!-- <p class="h3 white-text">Mountain biking</p> -->
-    </div>
-  </div>
-      </div>
-    </div>
-</div>
-
-<br>
-<div class="container">
-
-
-<div class="jumbotron rafting">
-<p class="h1 text-center white-text pt-5">
-A Ride in the Ganges!
-
-</p>
-<div class="text-center">
-<button type="button" class="btn btn-primary ">Rafting in Rishikesh</button>
-</div>
-
-        </div>
-        </div>
-        <hr class="mb-5">
-
+  <div class="container wow animated slideInLeft">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="font-weight-bold pl-5">Benefits</h2>
         <br>
-                <div class="container mt-5 ">
 
-
-          <!--Section: Content-->
-          <section class="text-center dark-grey-text p-5 wow animated slideInLeft">
-
-            <!-- Section heading -->
-            <h2 class="font-weight-bold">What customers say about us</h2>
-            <hr class="w-header my-4">
-            <!-- Section description -->
-
-
-
-            <!-- Grid row -->
-            <div class="row">
-
-              <!-- Grid column -->
-              <div class="col-md-6 mb-4">
-
-                <div class="card-img-100 mx-auto mb-4">
-                  <img src="img/testo5.jpg" class="z-depth-1 img-fluid" alt="smaple image">
-                </div>
-                <p class="mt-3 mb-4 text-muted">"At the outset, let me thank you for introducing sharma taxi service in uttarakhand and for giving me an opportunity to use your service. Your customer support was impeccable and vehicle was well-maintained and top-notch."</p>
-                <p class="font-italic font-weight-normal">- Aman Gupta</p>
-
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-6 mb-4">
-
-                <div class="card-img-100 mx-auto mb-4"  >
-                  <img src="img/testo3.jpg" class="z-depth-1 img-fluid" style="height: 120px !important;" alt="smaple image">
-                </div>
-                <p class="mt-3 mb-4 text-muted">"I just wanted to let you know that I really appreciate the efforts you are making personally, to ensure that the customer is satisfied... I really hope you carry forward this culture and make a model for other companies."</p>
-                <p class="font-italic font-weight-normal">- Sourav Singh</p>
-
-              </div>
-              <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-          </section>
-          <!--Section: Content-->
-
-
+        <div class="row ">
+          <div class="col-3 text-right">
+            <img src="img/SearchCar.png" alt="">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary font-weight-bold">Sanitized Car </h6>
+            <small>We'll never sacrifice quality for convenience. Our equipment is state-of-the-art.
+              We instruct our drivers to disinfectant wipes for everyone to use.
+            </small>
+          </div>
         </div>
+        <br><br>
+
+        <div class="row">
+          <div class="col-3 text-right">
+            <img src="img/Download.png" alt="">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary font-weight-bold">Reasonable Rate</h6>
+            <small>Our rates are anchored by local taxi fares: we sets its rates to be slightly lower than whatever taxis charge, and so its fares are likely to work in a similar way to that city's taxi metering.
+            </small>
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-3 text-right">
+            <img src="img/Price.png" alt="" >
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary font-weight-bold">Money Saving</h6>
+            <small>We valued money the package we introduce is highly reasonable rates
+              that is reason it make us different from another.
+            </small>
+          </div>
+        </div>
+        <br><br>
+        <div class="pl-5">
+          <button class="btn btn-primary" type="button" name="button" style="border-radius: 20px;">Get Started</button>
+          <button class="btn btn bg-white" type="button" name="button" style="border-radius: 20px;">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<div class="container">
 
 
+  <!--Section: Main info-->
+  <section class="mt-5 wow fadeIn">
 
-
-
-<!-- Footer -->
-<footer class="page-footer font-small  blue-grey darken-4">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
+    <!--Grid row-->
     <div class="row">
 
-      <!-- Grid column -->
-      <div class=" col-md-12 py-5">
-        <div class="mb-5 flex-center">
+      <!--Grid column-->
+      <div class="col-md-6 mb-4 wow slideInLeft animated">
 
-          <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        <img src="img/picnic1.jpeg" class="img-fluid z-depth-1-half"
+        alt="">
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4 wow slideInRight animated">
+
+        <!-- Main heading -->
+        <h3 class="h3 mb-3">A car for every occasion </h3>
+        <p>We know the difference is in the details and that’s why our car rental services, in the tourism
+          and business industry, stand out for their quality and good taste, to offer you an unique experience</p>
+          <!-- Main heading -->
+
+          <hr>
+
+          <p>
+            <strong>400+</strong>For Outstation Cars,
+            <strong>600+</strong> For Local Cars,
+            <strong>74+</strong>Luxury Cars
+
+          </p>
+
+          <!-- CTA -->
+          <a target="_blank" href="#" class="btn btn-grey btn-md">Download the Rate chart
+            <i class="fas fa-download ml-1"></i>
           </a>
 
 
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!--Pinterest-->
-          <a class="pin-ic">
-            <i class="fab fa-whatsapp fa-lg white-text fa-2x"> </i>
-          </a>
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+
+  </div>
+
+  <h2 class="text-center font-weight-bold pt-4 pb-4">Lets Do Some Adventure</h2>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-3 col-xs-12 col-sm-12">
+        <div class="view overlay zoom wow animated slideInLeft">
+          <img src="img/trek.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-light overlay">
+            <!-- <a href="#" class="btn btn-primary">Trekking</a> -->
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Trekking</a>
+            <!-- <p class="h3 white-text">Trekking</p> -->
+          </div>
         </div>
       </div>
-      <!-- Grid column -->
+      <div class="col-lg-3">
+        <div class="view overlay zoom wow animated slideInLeft">
+          <img src="img/hill.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-light overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Hill Stations</a>
+            <!-- <p class="h3 white-text">Hill Stations</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="view overlay zoom wow animated slideInRight">
+          <img src="img/roadtrip.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-light overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Road Trip</a>
+            <!-- <p class="h3 white-text">Road Trip</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="view overlay zoom wow animated slideInRight">
+          <img src="img/rafting.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-dark overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">River Rafting</a>
+
+            <!-- <p class="h3 white-text">River Rafting</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-3 col-xs-12 col-sm-12">
+        <div class="view overlay zoom wow animated slideInLeft">
+          <img src="img/buggee.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-light overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Bungee Jumping</a>
+
+            <!-- <p class="h3 white-text">Bungee Jumping</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="view overlay zoom wow animated slideInLeft">
+          <img src="img/climbing.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-light overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Rock Climbing</a>
+
+            <!-- <p class="h3 white-text">Rock Climbing</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="view overlay zoom wow animated slideInRight">
+          <img src="img/camp.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-light overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Camping</a>
+
+            <!-- <p class="h3 white-text">Camping</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="view overlay zoom wow animated slideInRight">
+          <img src="img/cycling.jpeg" class="img-fluid " alt="zoom" style="height: 200px;">
+          <div class="mask flex-center waves-effect waves-dark overlay">
+            <a href="#" class="btn btn-white btn-md waves-effect" style="border-radius: 20px;">Mountain biking</a>
+
+            <!-- <p class="h3 white-text">Mountain biking</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+
+
+    <div class="jumbotron rafting">
+      <p class="h1 text-center white-text pt-5">
+        A Ride in the Ganges!
+
+      </p>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary ">Rafting in Rishikesh</button>
+      </div>
 
     </div>
-    <!-- Grid row-->
+  </div>
+  <hr class="mb-5">
+
+  <br>
+  <div class="container mt-5 ">
+
+
+    <!--Section: Content-->
+    <section class="text-center dark-grey-text p-5 wow animated slideInLeft">
+
+      <!-- Section heading -->
+      <h2 class="font-weight-bold">What customers say about us</h2>
+      <hr class="w-header my-4">
+      <!-- Section description -->
+
+
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-4">
+
+          <div class="card-img-100 mx-auto mb-4">
+            <img src="img/testo5.jpg" class="z-depth-1 img-fluid" alt="smaple image">
+          </div>
+          <p class="mt-3 mb-4 text-muted">"At the outset, let me thank you for introducing sharma taxi service in uttarakhand and for giving me an opportunity to use your service. Your customer support was impeccable and vehicle was well-maintained and top-notch."</p>
+          <p class="font-italic font-weight-normal">- Aman Gupta</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-4">
+
+          <div class="card-img-100 mx-auto mb-4"  >
+            <img src="img/testo3.jpg" class="z-depth-1 img-fluid" style="height: 120px !important;" alt="smaple image">
+          </div>
+          <p class="mt-3 mb-4 text-muted">"I just wanted to let you know that I really appreciate the efforts you are making personally, to ensure that the customer is satisfied... I really hope you carry forward this culture and make a model for other companies."</p>
+          <p class="font-italic font-weight-normal">- Sourav Singh</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </section>
+    <!--Section: Content-->
+
 
   </div>
-  <!-- Footer Elements -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="#"> sharma taxi service.com</a>
-  </div>
-  <!-- Copyright -->
 
-</footer>
 
-<script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxSrFH6YtR1cfU514xdRrJCSihJl97j4_QNiHrriuLCCdYqSFc/exec'
-const form = document.forms['google-sheet']
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => $('.booking').hide(),$('.congo').show(7000))
-  .catch(error => console.error('Error!', error.message))
-});
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small  blue-grey darken-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class=" col-md-12 py-5">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+
+
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic" target="_blank" href="https://api.whatsapp.com/send?phone=+918453111119">
+              <i class="fab fa-whatsapp fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> Sharma Taxi Service</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxSrFH6YtR1cfU514xdRrJCSihJl97j4_QNiHrriuLCCdYqSFc/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => $('.booking').hide(),$('.congo').show(7000))
+    .catch(error => console.error('Error!', error.message))
+  });
 </script>
 <!-- Footer -->
 
